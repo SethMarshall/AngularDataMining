@@ -1,0 +1,38 @@
+<div id="aboutPageDiv" height='1100px'>   
+    <div id="divText">
+    <p>
+      This web application is a tool for visualizing k-means clustering, a common but fundamental algorithm
+      in data mining. Informally, k-means works as follows:
+        
+      <br><br>
+      <span>  Choose a number of clusters. We then attempt to group data points such that our clustering  
+      is as "tight" as possible. </span> <span>That is, the distance from each point to its cluster center is minimized.   </span>
+
+      <br><br>
+      A bit more technically, k-means minimizes the sum of the squared distance between every point and its current centroid. If an alternate cluster center is closer a point is reassigned to that new center. Reassigning a point 
+      to a new cluster, however, alters a cluster's average, and thus a  racalibrates the cluster center. Distance here can also be thought of 
+      as the sum of sqaured error (SSE), the output of which is displayed in the data panel of the home page.
+
+     <br><br>
+      The demo simplifies K-means insofar as the data sets are generated randomly on every run; the number of clusters is set to four, and data points are restricted to two dimensions. The latter in particular is 
+      necessary to provide a user-friendly real-time visualization. In principle, of course, the number of clusters is variable and the dimensions to a data set unlimited.
+
+      <br>
+     
+    </p>
+
+    
+    <p> As an example, k-means can be applied to the problem of color quantization as the following image illustrates.</p>
+    <br>
+    <div id="imgDiv">
+        <img src="/assets/images/colorQuant.PNG" alt="image" height='315px'>
+    </div>
+
+    <p>     
+        Since every color can be represented as a point in a three-dimensional RGB space, k-means is an effective algorithm for smoothing a reduction in colors. Indeed, an impressive amount of detail
+       can be preserved in spite of a tremendous reduction in available shades of colors.
+    </p>
+  </div>    
+<div>
+    
+    

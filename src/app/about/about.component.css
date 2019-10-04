@@ -1,0 +1,50 @@
+@keyframes fadeIn{ 
+    from { opacity: 0}
+    to { opacity: 2 }
+}
+
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 15px;
+  text-align: left;
+  font-size: 1.1em;
+  
+}
+
+#aboutPageDiv {
+    animation: 1s ease-out 0s 1 fadeIn;  
+    animation-timing-function: ease-in;
+    height:1000px;
+    margin-top: 0px;
+    background-color: cornflowerblue;
+    min-height: 100%;
+    text-align: center;
+  
+    margin: 0;
+}
+
+#divText {
+
+    height: 740px;
+    width: 1200px;
+    background-color:azure !important; 
+    display: inline-block;
+    margin-top: 50px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    justify-content: center;  
+   
+}
+#explanationP{
+    text-indent: 20%;
+    
+}
+
+span {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+#imgDiv{
+    margin: 5px;
+}

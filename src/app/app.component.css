@@ -1,0 +1,7 @@
+#page {
+    display: flex;   
+    height: 1000px;
+    flex-direction: column;    
+    vertical-align: top; 
+   
+}

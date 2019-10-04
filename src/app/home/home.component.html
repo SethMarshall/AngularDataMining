@@ -1,0 +1,96 @@
+
+
+
+ 
+
+
+
+
+
+  
+   <!-- <div class="content">
+  
+    <label id="myLabel" ><b>Status: </b></label> 
+    <label id="myStatusLabel" ><b>{{ Status }} </b></label>   
+
+    <div> -->
+
+    
+<!-- <button id="startBtn" class="btn-outline-primary" input="button" (click)="begin()" [disabled]="!startBtnEnabled"><b>Start</b></button> -->
+
+<div id="parent" height='720px'>    
+  
+    <div id="screenDiv">   
+       <canvas id='screen' #myId width='1100px' height='720px'></canvas>
+    </div>
+
+
+    
+    <div id="btnDiv" width='200px' >
+        
+       <div class="dataLabelDiv">
+          <div class="dataDiv">  
+              <button id="dataBtn"  #myId2 (click)="begin()" class="btn-outline-primary" [disabled]="!startBtnEnabled"><b>Begin Clustering!</b></button><br>
+                </div>
+          <div class="dataDiv">  
+            <a id="dataLabel5"><b>Current Iteration: </b> </a>   
+             <input id="iterBox" readonly value='{{Iteration}}'>  
+         </div>
+        <div class="dataDiv">
+            <a id="dataLabel1"><b>Initial SSE: </b> </a>    
+            <input readonly value='{{IntialSSEDisplay}}'>              
+        </div>  
+        <div class="dataDiv">
+            <a id="dataLabel2"><b>Final SSE: </b></a>   
+            <input readonly value='{{FinalSSEDisplay}}'> 
+        </div>
+      
+
+        <div id="dataDivCenterLabel" >
+           
+           <input id="nullInput" readonly >  
+           <a id="dataCoord">Center Coordinates:</a>  
+           <!-- <input  readonly value='{{YellowClusterDisplay}}'>  -->
+        </div>       
+        
+      
+          <div class="dataDiv">
+          <a id="dataLabel3"><b>Yellow</b></a>     
+          <input readonly readonly type="text" value='{{YellowClusterDisplay}}'> 
+         </div>
+          <div class="dataDiv">
+          <a id="dataLabel4"><b>Green</b></a> 
+          <input readonly readonly type="text" value='{{GreenClusterDisplay}}'> 
+          </div>
+          <div class="dataDiv">
+          <a id="dataLabel5" ><b>Red </b></a>   
+          <input readonly type="text"value='{{RedClusterDisplay}}'>     
+
+
+    </div>
+    <div class="dataDiv">
+        <a id="dataLabel5" ><b>Orange </b></a>   
+        <input readonly type="text"value='{{OrangeClusterDisplay}}'>    
+     </div>
+
+    </div>
+
+
+
+
+</div> 
+
+
+<!-- 
+<label id="myLabel" ><b>Operation: </b></label> 
+<label id="myStatusLabel" ><b>{{ Status }} </b></label>   
+
+
+<label id="myLabel2" ><b>Current Point: </b></label> 
+<label id="myPointLabel" ><b>{{ currentPoint }} </b></label>   
+
+
+<canvas id='screen' width='900px' height='650px' style="border: 4px solid black; border-radius: 3px" ></canvas>
+ </div>
+
+</div> -->
