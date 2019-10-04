@@ -304,17 +304,17 @@ export class HomeComponent implements OnInit {
 
     this.Status = "Assigning points to nearest center";
     
-    var canvas = document.getElementById("screen") as HTMLCanvasElement;
-    var ctx = canvas.getContext("2d");
+    let canvas = document.getElementById("screen") as HTMLCanvasElement;
+    let ctx = canvas.getContext("2d");
     
     var currentCircle = this.circles[this.clusterPointsCounter];
 
     this.currentPoint = "{x: " + parseFloat(currentCircle.x.toString()).toFixed(2) + ", y: "
       + parseFloat(currentCircle.y.toString()).toFixed(2) + "}";
     
-    var smallestDistance: number;
+    let smallestDistance: number;
     smallestDistance = 10000;
-    var tempDistance: number;
+    let tempDistance: number;
 
     //find every point's nearest cluster 
     for (let k = 0; k < this.NumberOfClusters; k++) {
@@ -339,7 +339,7 @@ export class HomeComponent implements OnInit {
     this.circles[this.clusterPointsCounter].color = rCenter.color;
     //  this.circles[this.clusterPointsCounter].color = rCenter.color;
     //no need to compare a center to itself
-    if (currentCircle.x != rCenter.x && currentCircle.y != rCenter.y) {
+    if (currentCircle.x != rCenter.x && currentCircle.y !== rCenter.y) {
 
       var xDifference = currentCircle.x - rCenter.x;
       var yDifference = currentCircle.y - rCenter.y;
@@ -380,14 +380,13 @@ export class HomeComponent implements OnInit {
     else {
       if (this.KMeansCounter < ITERATIONS) {
 
-        if (this.IterationCounter == 1)
+        if (this.IterationCounter === 1)
           this.InitialSSE = this.SSE;
         this.IntialSSEDisplay = parseFloat(this.InitialSSE.toFixed(2)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
         this.IterationCounter++;
         this.waitRepaint();
-      }
-      else {
+      } else {
 
         this.startBtnEnabled = true;
         this.FinalSSE = this.SSE;
